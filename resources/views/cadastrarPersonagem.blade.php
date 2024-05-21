@@ -1,16 +1,17 @@
+@extends('layouts.basic')
+
 <h1>Cadastro de Personagens</h1>
 
-<ul>
-    <li>
-        <a  href = "{{route('site.index')}}">Pagina Inicial</a>
-     </li>
-     <li>
-        <a  href = "{{route('site.personagens')}}">Personagens</a>
-     </li>
-     <li>
-        <a  href = "{{route('site.cadastrarPersonagens')}}">Cadastro de personagens</a>
-     </li>
-     <li>
-        <a  href = "{{route('site.contato')}}">Contato</a>
-     </li>
-</ul>
+<div class="containerForm">
+    <h1>Formulario para cadastro de personagens</h1>
+
+        <form action="">
+            <div class="formGroup"><input type="text" name="nome" placeholder="Nome do personagem"></div>
+            <BR></BR>
+            <div class="formGroup"><input type="text" name="poder" placeholder="Poder Principal"></div>
+            <br>
+            <div class="formGroup"><input type="text" name="sonho" placeholder="O maior sonho"></div>
+            <br>
+            
+        </form>
+</div>

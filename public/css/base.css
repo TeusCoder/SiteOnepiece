@@ -1,0 +1,79 @@
+html,
+body {
+    
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color:black; 
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+
+.topo {
+    display: flex;
+    justify-content: start;
+}
+
+.textoHeader{
+    color: white;
+    text-decoration: none;
+
+}
+.camposheader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#logo{
+    width: 100%; 
+    height:100%;
+}
+
+#formPersonagem{
+    margin-top: 4%;
+    width: 33.333%;
+    border-top:solid 1px #ccc;
+    float: left;
+    text-align: center;
+    background-color: #f8f8f8;
+    height: 250px;
+}
+
+.containerForm{
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background:#ffffff; 
+    box-shadow: 1px 0px 1.2px 0px #e3e3e3; 
+    border-radius:3px; 
+    padding:1em;
+}
+
+.container_form h1 {
+    
+    font-family:'open_sansregular';
+    font-size: 2.3em;
+    color: #00dae0;
+    border-bottom: 1px #f0eded solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.form_grupo {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+}
