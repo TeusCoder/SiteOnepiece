@@ -1,4 +1,4 @@
 @extends('layouts.basic')
 
-<h1>Pagina Inicial</h1>
+@section('title', 'Pagina inicial')
 

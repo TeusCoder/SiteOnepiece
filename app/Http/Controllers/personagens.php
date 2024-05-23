@@ -1,12 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+// namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+// use Illuminate\Http\Request;
+// use App\Models\personagens;
 
-class personagens extends Controller
-{
-    public function personagens() {
-        return view('personagens');
-    }
-}
+// class personagens extends Controller
+// {
+//     public function personagens() {
+//         return view('personagens');
+//     }
+//     public function index()
+//     {
+//         $personagens = personagens::all();
+//         return view('personagem.index', compact('personagens'));
+//     }
+// }

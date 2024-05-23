@@ -1,4 +1,8 @@
 @extends('layouts.basic')
 
-<h1>Contato</h1>
+@section('title', 'Contato')
+
+@component('components.formularioContato')
+@endcomponent
+
 

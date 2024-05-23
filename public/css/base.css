@@ -4,6 +4,7 @@ body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(168, 166, 166)
 }
 
 .header {
@@ -34,6 +35,9 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+}
+.camposheader :hover{
+    color: red;
 }
 
 #logo{
