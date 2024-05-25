@@ -14,6 +14,7 @@ Route::redirect('/personagem', '/personagens');
 
 Route::post('/cadastrarPersonagens',[\App\Http\Controllers\personagemController::class, 'savePersonagem'])->name('site.savePersonagem');
 Route::get('/cadastrarPersonagens',[\App\Http\Controllers\personagemController::class, 'index'])->name('cadastrarPersonagens.index');
+Route::get('/personagens/mostrar/{id}',[\App\Http\Controllers\personagemController::class, 'Mostrar'])->name('personagem.mostrar');
 Route::get('/personagens/{id}/edit', [\App\Http\Controllers\personagemController::class, 'edit'])->name('personagens.edit');
 Route::put('/personagens/{id}', [\App\Http\Controllers\personagemController::class, 'update'])->name('personagens.update');
 Route::delete('/personagens/{id}', [\App\Http\Controllers\personagemController::class, 'destroy'])->name('personagens.destroy');

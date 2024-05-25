@@ -20,7 +20,7 @@
         </div>
         <div class="form_grupo">
             <input type="hidden" name="acao" value="enviar">
-            <button type="submit" name="Submit" class="submit_btn" onclick="" >Criar</button>
+            <button type="submit" name="Submit" class="submit_btn" onclick="return redirect()->route('site.personagens')">Criar</button>
         </div>
     </form>
 </div>

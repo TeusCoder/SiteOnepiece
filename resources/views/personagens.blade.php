@@ -7,8 +7,8 @@
         <div class="cards">
             @foreach ($personagens as $personagem)
                 <div class="c-card">
-                    <img src="{{ $personagem->imagem ? asset('storage/' . $personagem->imagem) : asset('img/default.jpg') }}"
-                        alt="imagem do card">
+                    <a href="{{route('personagem.mostrar', $personagem->id)}}"><img src="{{ $personagem->imagem ? asset('storage/' . $personagem->imagem) : asset('img/default.jpg') }}"
+                        alt="imagem do card"></a>
                     <div class="nome"><p>Nome: {{ $personagem->nome }}</p></div>
                     <div class="poder"><p>Poder: {{ $personagem->poder }}</p></div>
                     <div class="sonho"><p>Sonho: {{ $personagem->sonho }}</p></div>

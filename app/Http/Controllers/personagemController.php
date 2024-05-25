@@ -8,15 +8,6 @@ use App\Models\personagens;
 
 class personagemController extends Controller
 {
-    public function cadastrarPersonagem() {
-        return view('cadastrarPersonagem');
-    }
-
-    public function create()
-    {
-        return view('personagem.create');
-    }
-
     public function savePersonagem(Request $request) {
 
         $path = null;
@@ -38,6 +29,12 @@ class personagemController extends Controller
         return view('cadastrarPersonagem', compact('personagens'));
     }
 
+    public function Mostrar($id)
+    {
+        $personagem = personagens::findOrFail($id);
+        return view('mostrar', compact('personagem'));
+    }
+
     public function edit($id)
     {
         $personagem = personagens::findOrFail($id);
@@ -46,12 +43,6 @@ class personagemController extends Controller
 
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'nome' => 'required|string|max:255',
-            'poder' => 'required|string|max:255',
-            'sonho' => 'required|string',
-            'imagem' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-        ]);
 
         $personagem = personagens::findOrFail($id);
 
