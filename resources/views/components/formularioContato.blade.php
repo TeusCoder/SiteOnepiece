@@ -1,24 +1,24 @@
 <div class="formularioContato">       
     <form action="{{route('site.contato')}}" method="post">
         @csrf
-        <h2>Entre em contato</h2>
+        <h1>Entre em contato</h1>
         <label>
-            <span><i class="icon icon-user-1"></i> Nome</span>
-            <input type="text" name="nome" required="">
+            <span>Nome</span>
+            <input type="text" name="nome" required="" placeholder="nome">
         </label>
         
         <label>
-            <span><i class="icon icon-email"></i> E-mail</span>
-            <input type="text" name="email" class="fade_8S">
+            <span> E-mail</span>
+            <input type="text" name="email" class="fade_8S" placeholder="e-mail">
         </label>
         <label>
-            <span><i class="icon icon-flag"></i> Assunto</span>
-            <input type="text" name="assunto" required="">
+            <span> Assunto</span>
+            <input type="text" name="assunto" required="" placeholder="assunto">
         </label>
         
         <label>
-            <span><i class="icon icon-comment"></i> Mensagem</span>
-             <textarea name="mensagem" rows="3" required=""></textarea> 
+            <span>Mensagem</span>
+             <input type="text" name="mensagem" rows="3" required="" placeholder="Deixe sua mensagem.."> 
         </label>
        
         <input type="hidden" name="acao" value="enviar" />
