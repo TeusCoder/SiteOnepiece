@@ -20,7 +20,7 @@ class personagemController extends Controller
             'sonho' => $request->sonho,
             'imagem' => $path,
         ]);
-        return view('cadastrarPersonagem');
+        return redirect()->route('site.personagens');
     }
 
     public function index()

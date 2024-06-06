@@ -1,6 +1,7 @@
 @extends('layouts.basic')
 
 @section('title', 'Pagina inicial')
+@section('content')
 <div class="bodyPI">
     <div id="H1">
     <h1>Vamos embarcar nessa aventura juntos?</h1>
@@ -8,7 +9,7 @@
     <div id="imgEntrada">
         <img id="imgDiv" src="{{ asset('img/imgEntrada.jpg') }}" alt="">
     </div>
-    <p>One Piece: A Jornada Épica em Busca do Tesouro Lendário
+    <p>One Piece: A Jornada Épica em Busca do Tesouro Lendário <br><br>
 
         Bem-vindo ao mundo de One Piece, a série de anime e mangá que conquistou milhões de fãs ao redor do globo.
         Criada por Eiichiro Oda, essa aventura épica segue as jornadas de Monkey D. Luffy e sua intrépida tripulação de
@@ -42,3 +43,4 @@
     <p>
         Embarque conosco e descubra o que faz de One Piece uma das maiores aventuras já contadas!</p>
 </div>
+@endsection

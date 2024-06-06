@@ -11,12 +11,12 @@ class contato extends Controller
         return view('contato');
     }
 
-    public function saveContato(){
+    public function saveContato(Request $request){
         SiteContato::create([
-            'nome'=> $_POST['nome'],
-            'email'=> $_POST['email'],
-            'assunto'=> $_POST['assunto'],
-            'mensagem'=> $_POST['mensagem']
+            'nome' => $request->input('nome'),
+            'email' => $request->input('email'),
+            'assunto' => $request->input('assunto'),
+            'mensagem' => $request->input('mensagem'),
         ]);
         return view('contato');
     }
